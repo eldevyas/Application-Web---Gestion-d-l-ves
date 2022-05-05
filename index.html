@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - Gestion des étudiants</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
+        }
+    </style>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+    <div id="Container">
+        <div id="Overlay"></div>
+        <div class="DataEntry" id="Form">
+            <form id="FormData">
+                <div class="Entries">
+                    <div class="Entry">
+                        <span class="material-symbols-outlined">
+                            tag
+                        </span>
+                        <input type="text" id="CODE" placeholder="Code" required/>
+                    </div>
+                    <div class="Entry">
+                        <span class="material-symbols-outlined">
+                            face
+                        </span>
+                        <input type="text" id="NOM" placeholder="Nom" required/>
+                    </div>
+                    <div class="Entry">
+                        <span class="material-symbols-outlined">
+                            face
+                        </span>
+                        <input type="text" id="PRENOM" placeholder="Prénom" required/>
+                    </div>
+                    <div class="Entry">
+                        <span class="material-symbols-outlined">
+                            date_range
+                        </span>
+                        <input type="text" id="SEMESTRE" placeholder="Semestre" required/>
+                    </div>
+                    <div class="Entry">
+                        <span class="material-symbols-outlined">
+                            school
+                        </span>
+                        <input type="text" id="FILIERE" placeholder="Filière" required/>
+                    </div>
+                </div>
+
+                <div class="Buttons">
+                    <button type="submit" id="Ajouter"><span class="material-symbols-outlined">add_circle</span>Ajouter</button>
+                    <button type="button" id="Annuler"><span class="material-symbols-outlined">cancel</span>Annuler</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="Data">
+            <div class='Title'>
+
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+
+                <h1>Liste des étudiants</h1>
+            </div>
+
+            <div class="Controllers">
+                <button type="button" class="Button" id="Premier"><span class="material-symbols-outlined">skip_previous</span>Premier</button>
+                <button type="button" class="Button" id="Précédent"><span class="material-symbols-outlined">navigate_before</span>Précédent</button>
+                <button type="button" class="Button" id="Suivant"><span class="material-symbols-outlined">navigate_next</span>Suivant</button>
+                <button type="button" class="Button" id="Dernier"><span class="material-symbols-outlined">skip_next</span>Dernier</button>
+            </div>
+
+            <table id="Table">
+                <tr>
+                    <th>SÉLECTIONNÉ</th>
+                    <th>CODE</th>
+                    <th>NOM</th>
+                    <th>PRÉNOM</th>
+                    <th>SEMESTRE</th>
+                    <th>FILIÉRE</th>
+                </tr>
+
+
+            </table>
+            <div class="Buttons">
+                <button type="button" class="Button" id="Afficher"><span class="material-symbols-outlined">add_circle</span>Ajouter</button>
+                <button type="button" class="Button" id="Supprimer"><span class="material-symbols-outlined">delete</span>Supprimer</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="JavaScript/script.js"></script>
+
+</html>
